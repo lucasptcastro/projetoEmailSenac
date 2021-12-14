@@ -1,33 +1,31 @@
 import tkinter as tk
-from tkinter.constants import BOTH
-import pyautogui 
-import pyperclip
-import selenium
 from modulos import *
 from modulos.funcoes import sendEmail
 
+#FUNÇÕES A SEREM REALIZADAS APÓS O CLIQUE NO BOTÃO "CONCLUÍDO"
 def funcoes():
     nome = entryNome.get().title()
     sobrenome = entrySobrenome.get().title()
     email = entryEmail.get()
     vaga = entryVaga.get().title()
-    empresa = entryEmpresa.get()
+    empresa = entryEmpresa.get().upper()
     sendEmail(nome=nome, sobrenome=sobrenome, email=email, vaga=vaga, empresa=empresa)
 
 
 
 
-#INTERFACE
+#JANELA DA INTERFACE
 janela = tk.Tk()
 janela.title('SENAC/RN')
 janela.geometry("200x195")
 janela.iconbitmap(r'imagens\logoSenac.ico')
 
 
-#CAMPOS
+#TÍTULO
 labelTitulo = tk.Label(text='Automação E-mail')
 labelTitulo.grid(row=1, column=0, padx=10, pady=10, sticky='nswe', columnspan=5)
 
+#CAMPOS DE SUBTÍTULOS E COLETA DE DADOS
 labelNome = tk.Label(text='Nome:')
 labelNome.grid(row=2, column=0)
 entryNome = tk.Entry()
@@ -59,5 +57,5 @@ botaoConcluido = tk.Button(text='Concluído', command=funcoes)
 botaoConcluido.grid(row=7, column=0, padx=10, pady=10, sticky='nswe', columnspan=5)
 
 
+#ENCERRAMENTO
 janela.mainloop()
-
