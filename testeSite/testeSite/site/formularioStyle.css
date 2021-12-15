@@ -1,0 +1,25 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif; /*Fonte do body*/
+    background-image: linear-gradient(to right, rgb(0, 148, 255), rgb(39, 81, 109)); /*Fundo degradê da cor(0, 148, 255) para a cor (39, 81, 109)*/
+}
+
+.box {
+    position: absolute; /*Assume uma posição própria, com os atributos que serão listados abaixo*/
+    top: 50%; /*O box vai ficar 50% distante do topo do site*/
+    left: 50%; /*O box vai ficar 50% distante da esquerda do site*/
+    transform: translate(-50%, -50%); /*Coloca o posicionamento do box no centro*/
+    background-color: rgba(0,0,0,0.8); /*Função que usa os 3 primeiros parâmetros(rgb) para definir a cor do fundo do box e o 4° parâmetro(a) para definir a opacidade dessa cor*/
+    padding: 15px; /*Função para adicionar uma distância entre o box e suas bordas*/
+    border-radius: 15px; /*Função para adicionar uma borda arredonda de 15px para a box*/
+    width: 20%; /*Aumenta a largura do box*/
+}
+
+fieldset {
+    border: 3px solid dodgerblue; /*Deixa a borda do fieldset reta e azul com 3 pixels de largura*/
+}
+
+legend {
+    border: 1px solid dodgerblue; /*Deixa a borda da legenda  reta e azul com 1 pixel de largura*/
+    padding: 10px; /*Função para adicionar uma distância entre o box e suas bordas*/
+    text-align: center;
+}

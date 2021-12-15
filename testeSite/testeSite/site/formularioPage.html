@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link  rel="stylesheet" type="text/css" href="formularioStyle.css" />
+    <title> Formulário Dinâmico </title> <!-- Título da página -->
+</head>
+<body>
+    <div class="box"> <!-- Div para englobar todas as tags, juntamente da classe 'box' -->
+        <form action=""> <!-- Tag de formulário -->
+            <fieldset> <!-- Box para agrupar os elementos -->
+
+                <legend><b>Formulário Clientes</b></legend> <!-- Nome que irá ficar junto da box do fieldset -->
+
+                <br> <!-- Quebra de linha -->
+                <!-- Div's criadas para facilitar o design, tendo em vista que o design dos 3 campos serão o mesmo, então colocá-los na mesma classe facilita-->
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required /> <!-- Caixa de entrada de dados para o nome | O 'required' indica que o campo é de preenchimento obrigatório -->
+                    <label for="nome">Nome completo:</label>
+                </div>
+                <br /><br /> <!-- Quebra de linha para o espaçamento -->
+
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required /> <!-- Caixa de entrada de dados para o email -->
+                    <label for="email">E-mail:</label> <!-- Label com o nome 'E-mail:' para o input email -->
+                </div>
+                <br /><br /> <!-- Quebra de linha para o espaçamento -->
+
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required /> <!-- Caixa de entrada de dados para o telefone -->
+                    <label for="telefone">Telefone:</label> <!-- Label com o nome 'Telefone:' para o input telefone -->
+                </div>
+                <br /><br /> <!-- Quebra de linha para o espaçamento -->
+
+                <p>Sexo:</p> <!-- Parágrafo para receber o sexo -->
+                <input type="radio" id="feminino" name="genero" value="feminino" required /> <!-- Caixa para selecionar o tipo do sexo do cliente -->
+                <label for="feminino">Feminino</label> <!-- Label com o nome 'Feminino' para o input feminino -->
+                <input type="radio" id="masculino" name="genero" value="masculino" required /> <!-- Caixa para selecionar o tipo do sexo do cliente -->
+                <label for="masculino">Masculino</label> <!-- Label com o nome 'Masculino' para o input masculino -->
+                <input type="radio" id="outro" name="genero" value="outro" required /> <!-- Caixa para selecionar o tipo do sexo do cliente -->
+                <label for="outro">Outro</label> <!-- Label com o nome 'Outro' para o input outro -->
+                <br /><br />
+
+                <div class="inputBox">
+                    <label for="data"><b>Data de nascimento: </b></label> <!-- Label com o nome 'Data de nascimento' para o input data -->
+                    <input type="date" id="data" name="data" class="inputUser" required /> <!-- Input com calendáro (tipo date) para coleta da data de nascimento -->
+                </div>
+                <br /><br /> <!-- Quebra de linha para o espaçamento -->
+
+                <div class="inputBox">
+                    <input type="text" id="cidade" name="cidade" class="inputUser" required /> <!-- Input de texto para coleta da cidade -->
+                    <label for="cidade">Cidade:</label> <!-- Label com o nome 'Cidade:' para o input cidade -->
+                </div>
+                <br /><br /> <!-- Quebra de linha para o espaçamento -->
+
+                <div class="inputBox">
+                    <input type="text" id="estado" name="estado" class="inputUser" required /> <!-- Input de texto para coleta do estado -->
+                    <label for="estado">Estado:</label> <!-- Label com o nome 'Estado:' para o input estado -->
+                </div>
+                <br /><br /> <!-- Quebra de linha para o espaçamento -->
+
+                <div class="inputBox">
+                    <input type="text" id="endereco" name="endereco" class="inputUser" required /> <!-- Input de texto para coleta do endereço -->
+                    <label for="endereco">Endereço:</label> <!-- Label com o nome 'Endereço:' para o input endereco -->
+                </div>
+                <br /><br /> <!-- Quebra de linha para o espaçamento -->
+
+                <input type="submit" name="submit" id="submit" /> <!-- Input do tipo submit para enviar os dados -->
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
