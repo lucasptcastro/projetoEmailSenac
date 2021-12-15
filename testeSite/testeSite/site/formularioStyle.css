@@ -4,6 +4,7 @@
 }
 
 .box {
+    color: white; /*Deixa a cor dos elementos do box em branco*/
     position: absolute; /*Assume uma posição própria, com os atributos que serão listados abaixo*/
     top: 50%; /*O box vai ficar 50% distante do topo do site*/
     left: 50%; /*O box vai ficar 50% distante da esquerda do site*/
@@ -21,5 +22,7 @@ fieldset {
 legend {
     border: 1px solid dodgerblue; /*Deixa a borda da legenda  reta e azul com 1 pixel de largura*/
     padding: 10px; /*Função para adicionar uma distância entre o box e suas bordas*/
-    text-align: center;
+    text-align: center; /*Alinha o texto da legend ao centro*/
+    background-color: dodgerblue; /*Deixa o fundo da legend em azul*/
+    border-radius: 8px; /*Função para adicionar uma borda arredonda de 8px para a box*/
 }
