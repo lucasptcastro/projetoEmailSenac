@@ -4,19 +4,20 @@
 }
 
 .box {
-    color: white; /*Deixa a cor dos elementos do box em branco*/
+    color: white; /*Deixa a cor das fontes do box em branco*/
     position: absolute; /*Assume uma posição própria, com os atributos que serão listados abaixo*/
     top: 50%; /*O box vai ficar 50% distante do topo do site*/
     left: 50%; /*O box vai ficar 50% distante da esquerda do site*/
     transform: translate(-50%, -50%); /*Coloca o posicionamento do box no centro*/
-    background-color: rgba(0,0,0,0.8); /*Função que usa os 3 primeiros parâmetros(rgb) para definir a cor do fundo do box e o 4° parâmetro(a) para definir a opacidade dessa cor*/
-    padding: 15px; /*Função para adicionar uma distância entre o box e suas bordas*/
+    background-color: rgba(0,0,0,0.6); /*Função que usa os 3 primeiros parâmetros(rgb) para definir a cor do fundo do box e o 4° parâmetro(a) para definir a opacidade dessa cor*/
+    padding: 13px; /*Função para adicionar uma distância entre o box e suas bordas*/
     border-radius: 15px; /*Função para adicionar uma borda arredonda de 15px para a box*/
     width: 20%; /*Aumenta a largura do box*/
 }
 
 fieldset {
     border: 3px solid dodgerblue; /*Deixa a borda do fieldset reta e azul com 3 pixels de largura*/
+    border-radius: 15px;
 }
 
 legend {
@@ -25,4 +26,56 @@ legend {
     text-align: center; /*Alinha o texto da legend ao centro*/
     background-color: dodgerblue; /*Deixa o fundo da legend em azul*/
     border-radius: 8px; /*Função para adicionar uma borda arredonda de 8px para a box*/
+}
+
+.inputBox{
+    position: relative; /*Função para que a posição possa receber os atributos top, left, right, bottom*/
+}
+
+.inputUser {
+    background: none; /*Tira o fundo do inputUser*/
+    border: none; /*Tira a borda do inputUser*/
+    border-bottom: 1px solid white; /*Define a borda inferior como reta(solid), de um pixel e branca*/
+    outline: none; /*Remove a maração da caixa do input quando é clicada*/
+    color: white; /*Define a cor do inputUser como branco*/
+    font-size: 15px; /*Define o tamanho da fonte como 15 pixels*/
+    width: 100%; /*Define a largura do input em 100% para que ele se estenda até as pontas da caixa*/
+    letter-spacing: 1px; /*Dá um espaçamento entre as letras digitadas no inputUser*/
+}
+
+.labelInput {
+    position: absolute; /*Assume uma posição própria, com os atributos que serão listados abaixo*/
+    top: 0px;
+    left: 0px;
+    pointer-events: none; /*Faz com que a ação seja executada em qualquer lugar que o input for clicado*/
+    transition: .5s; /*Controla a velocidade da animação para 5 s*/
+}
+
+.inputUser:focus ~ .labelInput, /*Faz com que quando o inputUser for clicado (focus) uma ação seja gerada no labelInput*/
+.inputUser:valid ~ .labelInput{ /*e enquanto o inputUser for válido(valid), ou seja, enquanto tiver informação no input, a ação continuará */
+    top: -20px; /*O label vai subir para ficar -20px distante do topo*/
+    font-size: 12px; /*O tamanho da fonte irá diminuir para 12 pixels*/
+    color: dodgerblue; /*A cor irá mudar para azul*/
+}
+
+#data{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit {
+    background-image: linear-gradient(to right, rgb(0, 148, 255), rgb(90, 20, 220)); /*Fundo degradê da cor(0, 148, 255) para a cor (90, 20, 220)*/
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer; /*Faz com que o cursor mude de seta para o dedo quando passar por cima do botão*/
+}
+
+    #submit:hover { /*Quando o cursor passar por cima do botão, o botão irá mudar a cor para esta debaixo*/
+        background-image: linear-gradient(to right, rgb(0, 156, 263), rgb(89, 28, 230)); /*Fundo degradê da cor(0, 148, 255) para a cor (90, 20, 220)
 }
