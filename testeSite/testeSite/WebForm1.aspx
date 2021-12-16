@@ -1,13 +1,16 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <link  rel="stylesheet" type="text/css" href="formularioStyle.css" />
-    <title> Formulário Dinâmico </title> <!-- Título da página -->
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="testeSite.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="/site/formularioStyle.css" type="text/css" rel="stylesheet" /> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Formulário Dinâmico</title>
 </head>
 <body>
     <div class="box"> <!-- Div para englobar todas as tags, juntamente da classe 'box' -->
-        <form action=""> <!-- Tag de formulário -->
+        <form runat="server"> <!-- Tag de formulário -->
             <fieldset> <!-- Box para agrupar os elementos -->
 
                 <legend><b>Formulário Clientes</b></legend> <!-- Nome que irá ficar junto da box do fieldset -->
