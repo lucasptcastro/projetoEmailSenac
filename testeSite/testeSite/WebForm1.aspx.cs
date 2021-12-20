@@ -11,7 +11,14 @@ namespace testeSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+                
         }
+
+        protected void btnValidar_Click(object sender, EventArgs e)
+        {
+            string Nome = nome.Text;
+            string Email = email.Text;
+            string Telefone = telefone.Text;
+        } 
     }
 }
